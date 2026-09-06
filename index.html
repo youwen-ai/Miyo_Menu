@@ -2925,7 +2925,7 @@
             • Served with Seaweed Salad, Miso Soup, and Steamed White Rice.
           </div>
           <div class="details-cn">
-            • 午餐：6件手握寿司 + 1条加州卷<br>
+            • 午餐 14.95美元：6件手握寿司 + 1条加州卷<br>
             • 晚餐 22.95美元：9件手握寿司 + 1条加州卷<br>
             • 均附送海草沙拉、味噌汤与白米饭。
           </div>
@@ -2981,7 +2981,7 @@
             • Served with Seaweed Salad, Miso Soup, and Steamed White Rice.
           </div>
           <div class="details-cn">
-            • 午餐：4件寿司 + 3片刺身 + 1条辣金枪鱼卷<br>
+            • 午餐 15.95美元：4件寿司 + 3片刺身 + 1条辣金枪鱼卷<br>
             • 晚餐 27.95美元：7件寿司 + 6片刺身 + 1条辣金枪鱼卷<br>
             • 均附送海草沙拉、味噌汤与白米饭。
           </div>
@@ -3149,7 +3149,7 @@
         <div class="dish-name-cn">午市特选大卷套餐</div>
         <div class="details-box">
           <div class="details-en" id="d_lunch_special_plate">
-            • 12.95. Choose One Special Roll.<br>
+            • Choose One Special Roll.<br>
             • Options: M Café, Palmetto, Jade, Godzilla, Mandarin, Infinity, Rainbow, Sunrise, Mermaid, Haiku, or Red Devil.<br>
             • Includes side of House or Ginger Salad.
           </div>
@@ -3178,7 +3178,7 @@
         <div class="dish-name-cn">午市双细卷组合套餐</div>
         <div class="details-box">
           <div class="details-en" id="d_lunch_maki_plate">
-            • 11.95. Select Two Maki Rolls.<br>
+            • Select Two Maki Rolls.<br>
             • Options: California, Boston, Alaska, Jack, Spicy Asparagus, Eel, Spicy Tuna, Spicy Yellowtail, Spicy Salmon, Philadelphia, New York.<br>
             • Includes side of House or Ginger Salad.
           </div>
@@ -4517,8 +4517,17 @@
 
     let textToSpeak = elem.innerText || elem.textContent;
 
-    // Strip possessive apostrophes to prevent speech synthesis clumping
+    // 1. Remove bullet points, dots, and special list markers
+    textToSpeak = textToSpeak.replace(/[•·\*\-\u2022]/g, " ");
+
+    // 2. Normalize ampersands to natural spoken English
+    textToSpeak = textToSpeak.replace(/&/g, " and ");
+
+    // 3. Strip possessive apostrophes to prevent speech synthesis clumping
     textToSpeak = textToSpeak.replace(/'s\b/g, "s").replace(/’s\b/g, "s");
+
+    // 4. Collapse consecutive spaces/newlines so it pauses naturally
+    textToSpeak = textToSpeak.replace(/\s+/g, " ");
 
     // Apply phonetic map for natural American restaurant pronunciation
     for (const [original, phonetic] of Object.entries(PHONETIC_MAP)) {
@@ -4539,7 +4548,7 @@
 
     const utterance = new SpeechSynthesisUtterance(textToSpeak);
     utterance.lang = 'en-US';
-    utterance.rate = 0.88; // comfortable cadence for waitstaff study
+    utterance.rate = 0.88;
     utterance.pitch = 1.0;
     utterance.volume = 1.0;
 
