@@ -230,7 +230,8 @@
     <a href="#p2-liquors">P2: Liquors 烈酒</a>
     <a href="#p2-sake-beer">P2: Sake & Beer 清酒啤酒</a>
     <a href="#p3-appetizers">P3: Appetizers 前菜</a>
-    <a href="#p3-soups-salads">P3: Soups & Salads 汤与沙拉</a>
+    <a href="#p3-soups">P3: Soups 汤类</a>
+    <a href="#p3-salads">P3: Salads 沙拉</a>
     <a href="#p3-maki">P3: Maki Rolls 细卷</a>
     <a href="#p3-tempura-rolls">P3: Tempura Rolls 炸卷</a>
     <a href="#p3-fresh-rolls">P3: Fresh Rolls 招牌生鱼卷</a>
@@ -242,7 +243,7 @@
     <a href="#p4-rice-noodles">P4: Rice & Noodles 炒饭炒面</a>
     <a href="#p4-veggie">P4: Vegetarian 素食</a>
     <a href="#p4-cyo">P4: Create Your Own 自选菜</a>
-    <a href="#p4-kids-bev">P4: Kids & Tea 儿童与茶饮</a>
+    <a href="#p4-kids-bev">P4: Tea & Kids 茶饮与童餐</a>
   </div>
 </header>
 
@@ -818,7 +819,7 @@
     </div>
   </div>
 
-  <div id="p1-happyhour" class="section-title">Happy Hour Specials <span>周一至周五 4:00 - 7:00 PM 特惠</span></div>
+  <div id="p1-happyhour" class="section-title">Happy Hour Specials <span>周一至周五 4:00 - 7:00 PM 特惠 (逐项独立排版)</span></div>
   <div class="notice-box">
     <strong>💡 欢乐时光特惠标语 (Bar Specials):</strong><br>
     CHECK OUT OUR GREAT HAPPY HOUR SPECIALS!<br>
@@ -826,35 +827,108 @@
     周一至周五下午 4:00 至 7:00 供应。
   </div>
   <div class="grid">
+    <!-- Happy Hour Domestic Beer -->
     <div class="card">
-      <img src="images/happy_hour.jpg" alt="Happy Hour Specials" onerror="this.style.display='none'">
+      <img src="images/hh_domestic_beer.jpg" alt="Domestic Beer Happy Hour" onerror="this.style.display='none'">
       <div>
-        <span class="badge">Monday - Friday From 4-7pm</span>
+        <span class="badge">Happy Hour 4-7pm</span>
         <div class="card-header">
-          <div class="dish-name-en" id="n_happy_hour">Happy Hour Drink Specials</div>
-          <div class="price">$2.75 - $5.00</div>
+          <div class="dish-name-en" id="n_hh_dom">Domestic Beer</div>
+          <div class="price">$2.75</div>
         </div>
-        <div class="dish-name-cn">欢乐时光特价酒单</div>
+        <div class="dish-name-cn">特惠本土美式淡啤</div>
         <div class="details-box">
-          <div class="details-en" id="d_happy_hour">
-            • Domestic Beer<br>
-            • Imported / Asian Beer<br>
-            • Proverb Wine- Cabernet Sauvignon, Chardonnay, Pinot Grigio, Pinot Noir<br>
-            • Gekkeikan Hot Sake<br>
-            • Absolut Martinis- 80, Berry Acai, Apple, Vanilla, Citron, Mandrin)
-          </div>
-          <div class="details-cn">
-            • 美式淡啤：2.75美元<br>
-            • 进口/亚洲啤酒：3.75美元<br>
-            • 箴言葡萄酒：4.00美元（赤霞珠/霞多丽/灰皮诺/黑皮诺）<br>
-            • 月桂冠温热清酒：4.00美元<br>
-            • 绝对伏特加马天尼：5.00美元（经典/阿萨伊浆果/苹果/香草/柠檬/柑橘）
-          </div>
+          <div class="details-en" id="d_hh_dom">Domestic beer special: Coors Light, Miller Lite, Michelob Ultra, Yuengling.</div>
+          <div class="details-cn">特价美式本土啤酒（银子弹、美乐、米狮龙、云岭），每瓶仅2.75美元。</div>
         </div>
       </div>
       <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_happy_hour')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_happy_hour')">🔊 Speak Details</button>
+        <button class="btn-name" onclick="speakStrict('n_hh_dom')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_hh_dom')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Happy Hour Imported / Asian Beer -->
+    <div class="card">
+      <img src="images/hh_imported_beer.jpg" alt="Imported / Asian Beer Happy Hour" onerror="this.style.display='none'">
+      <div>
+        <span class="badge">Happy Hour 4-7pm</span>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_hh_imp">Imported or Asian Beer</div>
+          <div class="price">$3.75</div>
+        </div>
+        <div class="dish-name-cn">特惠进口与亚洲啤酒</div>
+        <div class="details-box">
+          <div class="details-en" id="d_hh_imp">Imported and Asian beer specials including Corona, Heineken, Asahi, Sapporo, and Tsingtao.</div>
+          <div class="details-cn">精选进口与亚洲啤酒特价（科罗娜、喜力、朝日、札幌、青岛啤酒等），每瓶3.75美元。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_hh_imp')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_hh_imp')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Happy Hour Proverb Wine -->
+    <div class="card">
+      <img src="images/hh_proverb_wine.jpg" alt="Proverb Wine Happy Hour" onerror="this.style.display='none'">
+      <div>
+        <span class="badge">Happy Hour 4-7pm</span>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_hh_wine">Proverb Wine</div>
+          <div class="price">$4.00</div>
+        </div>
+        <div class="dish-name-cn">特惠箴言浩斯葡萄酒</div>
+        <div class="details-box">
+          <div class="details-en" id="d_hh_wine">Proverb Wine: Cabernet Sauvignon, Chardonnay, Pinot Grigio, and Pinot Noir.</div>
+          <div class="details-cn">箴言单杯浩斯葡萄酒特价：赤霞珠红酒、霞多丽白酒、灰皮诺白酒或黑皮诺红酒，每杯4.00美元。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_hh_wine')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_hh_wine')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Happy Hour Gekkeikan Hot Sake -->
+    <div class="card">
+      <img src="images/hh_gekkeikan_sake.jpg" alt="Gekkeikan Hot Sake Happy Hour" onerror="this.style.display='none'">
+      <div>
+        <span class="badge">Happy Hour 4-7pm</span>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_hh_sake">Gekkeikan Hot Sake</div>
+          <div class="price">$4.00</div>
+        </div>
+        <div class="dish-name-cn">特惠月桂冠温热清酒</div>
+        <div class="details-box">
+          <div class="details-en" id="d_hh_sake">Gekkeikan Hot Sake. Served warm.</div>
+          <div class="details-cn">传统月桂冠日式温热清酒，每壶仅需4.00美元。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_hh_sake')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_hh_sake')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Happy Hour Absolut Martinis -->
+    <div class="card">
+      <img src="images/hh_absolut_martinis.jpg" alt="Absolut Martinis Happy Hour" onerror="this.style.display='none'">
+      <div>
+        <span class="badge">Happy Hour 4-7pm</span>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_hh_martini">Absolut Martinis</div>
+          <div class="price">$5.00</div>
+        </div>
+        <div class="dish-name-cn">特惠绝对伏特加马天尼</div>
+        <div class="details-box">
+          <div class="details-en" id="d_hh_martini">Absolut Martinis: 80 Original, Berry Acai, Apple, Vanilla, Citron, and Mandrin.</div>
+          <div class="details-cn">绝对伏特加马天尼：经典原味80度、阿萨伊浆果、苹果、香草、柠檬及柑橘风味可选，单杯5.00美元。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_hh_martini')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_hh_martini')">🔊 Speak Details</button>
       </div>
     </div>
   </div>
@@ -1129,40 +1203,145 @@
     </div>
   </div>
 
-  <div id="p2-liquors" class="section-title">Liquor List <span>酒吧常用基酒与名酒品牌</span></div>
+  <div id="p2-liquors" class="section-title">Liquor List <span>酒吧常用基酒与名酒品牌 (按类分类)</span></div>
   <div class="grid">
+    <!-- Vodka -->
     <div class="card">
-      <img src="images/liquor_list.jpg" alt="Liquor List" onerror="this.style.display='none'">
+      <img src="images/vodka.jpg" alt="Vodka" onerror="this.style.display='none'">
       <div>
         <div class="card-header">
-          <div class="dish-name-en" id="n_liquors">Full Bar Liquor List</div>
-          <div class="price">By Category</div>
+          <div class="dish-name-en" id="n_vodka">Vodka</div>
+          <div class="price">Bar Spirit</div>
         </div>
-        <div class="dish-name-cn">吧台各类基酒品牌速查</div>
+        <div class="dish-name-cn">伏特加系列</div>
         <div class="details-box">
-          <div class="details-en" id="d_liquors">
-            <strong>Vodka:</strong> Absolut (Original, Citron, Mandrin, Peach, Berry Acai, Vanilla), Ciroc Coconut, Tito's, Grey Goose.<br>
-            <strong>Gin:</strong> Beefeater, Tanqueray, Bombay Sapphire, Hendrick's.<br>
-            <strong>Rum:</strong> Malibu Coconut, Captain Morgan, Bacardi.<br>
-            <strong>Tequila:</strong> Olmeca Altos (Plata and Reposado), Avion Anejo, Patron (Silver and XO Cafe), Jose Cuervo.<br>
-            <strong>Bourbon & Whiskey:</strong> Jameson Irish, Jim Beam, Jack Daniels, Maker's Mark, Canadian Club, Seagram's 7, Crown Royal.<br>
-            <strong>Scotch:</strong> The Glenlivet 12, Chivas 12, Johnnie Walker Black.<br>
-            <strong>Cordials & Cognac:</strong> Kahlua, Martell VS, Grand Marnier, Cointreau, Pama, Chambord, Disaronno Amaretto, St-Germain, Godiva, Bailey's, Frangelico.
-          </div>
-          <div class="details-cn">
-            <strong>伏特加 (Vodka):</strong> 绝对伏特加（原味/柠檬/柑橘/白桃/阿萨伊/香草）、诗珞珂椰子、蒂托、灰雁。<br>
-            <strong>金酒 (Gin):</strong> 必富达、添加利、庞贝蓝钻、亨利爵士。<br>
-            <strong>朗姆酒 (Rum):</strong> 马利宝椰子、摩根船长、百加得。<br>
-            <strong>龙舌兰 (Tequila):</strong> 奥美加阿托斯、阿维翁、培恩（银标/咖啡利口）、豪帅金快活。<br>
-            <strong>威士忌 (Whiskey):</strong> 尊美醇爱尔兰、占边、杰克丹尼、美格波旁、加拿大俱乐部、施格兰7号、皇冠。<br>
-            <strong>苏格兰威士忌 (Scotch):</strong> 格兰威特12年、芝华士12年、尊尼获加黑牌黑方。<br>
-            <strong>利口酒与干邑 (Cordials):</strong> 咖啡酒、马爹利VS、柑曼怡、君度橙酒、帕玛石榴、香波树莓、帝萨诺杏仁酒、圣哲曼接骨木、歌帝梵、百利甜、榛子利口酒。
-          </div>
+          <div class="details-en" id="d_vodka">Absolut (Original, Citron, Mandrin, Peach, Berry Acai, Vanilla), Ciroc Coconut, Tito's, Grey Goose.</div>
+          <div class="details-cn">绝对伏特加（原味/柠檬/柑橘/白桃/阿萨伊/香草）、诗珞珂椰子、蒂托（手工伏特加）、灰雁（法国顶级伏特加）。</div>
         </div>
       </div>
       <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_liquors')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_liquors')">🔊 Speak Details</button>
+        <button class="btn-name" onclick="speakStrict('n_vodka')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_vodka')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Gin -->
+    <div class="card">
+      <img src="images/gin.jpg" alt="Gin" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_gin_spirit">Gin</div>
+          <div class="price">Bar Spirit</div>
+        </div>
+        <div class="dish-name-cn">金酒 / 琴酒系列</div>
+        <div class="details-box">
+          <div class="details-en" id="d_gin_spirit">Beefeater, Tanqueray, Bombay Sapphire, Hendrick's.</div>
+          <div class="details-cn">必富达（伦敦干金）、添加利、庞贝蓝钻、亨利爵士（黄瓜玫瑰风味）。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_gin_spirit')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_gin_spirit')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Rum -->
+    <div class="card">
+      <img src="images/rum.jpg" alt="Rum" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_rum">Rum</div>
+          <div class="price">Bar Spirit</div>
+        </div>
+        <div class="dish-name-cn">朗姆酒系列</div>
+        <div class="details-box">
+          <div class="details-en" id="d_rum">Malibu Coconut, Captain Morgan, Bacardi.</div>
+          <div class="details-cn">马利宝椰子朗姆、摩根船长（香料朗姆）、百加得（白朗姆）。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_rum')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_rum')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Tequila -->
+    <div class="card">
+      <img src="images/tequila.jpg" alt="Tequila" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_tequila">Tequila</div>
+          <div class="price">Bar Spirit</div>
+        </div>
+        <div class="dish-name-cn">龙舌兰系列</div>
+        <div class="details-box">
+          <div class="details-en" id="d_tequila">Olmeca Altos (Plata and Reposado), Avion Anejo, Patron (Silver and XO Cafe), Jose Cuervo.</div>
+          <div class="details-cn">奥美加阿托斯（白标/微陈）、阿维翁陈酿、培恩（银标/咖啡利口）、豪帅金快活。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_tequila')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_tequila')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Bourbon & Whiskey -->
+    <div class="card">
+      <img src="images/whiskey.jpg" alt="Bourbon & Whiskey" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_whiskey">Bourbon & Whiskey</div>
+          <div class="price">Bar Spirit</div>
+        </div>
+        <div class="dish-name-cn">波旁与各式威士忌系列</div>
+        <div class="details-box">
+          <div class="details-en" id="d_whiskey">Jameson Irish, Jim Beam, Jack Daniels, Maker's Mark, Canadian Club, Seagram's 7, Crown Royal.</div>
+          <div class="details-cn">尊美醇爱尔兰威士忌、占边波旁、杰克丹尼田纳西、美格波旁、加拿大俱乐部、施格兰7号、皇冠调和威士忌。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_whiskey')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_whiskey')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Scotch -->
+    <div class="card">
+      <img src="images/scotch.jpg" alt="Scotch" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_scotch">Scotch</div>
+          <div class="price">Bar Spirit</div>
+        </div>
+        <div class="dish-name-cn">苏格兰威士忌系列</div>
+        <div class="details-box">
+          <div class="details-en" id="d_scotch">The Glenlivet 12, Chivas 12, Johnnie Walker Black.</div>
+          <div class="details-cn">格兰威特12年（单一麦芽）、芝华士12年（调和苏格兰）、尊尼获加黑牌黑方。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_scotch')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_scotch')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Cordials & Cognac -->
+    <div class="card">
+      <img src="images/cordials.jpg" alt="Cordials & Cognac" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_cordials">Cordials & Cognac</div>
+          <div class="price">Bar Spirit</div>
+        </div>
+        <div class="dish-name-cn">餐后利口甜酒与干邑系列</div>
+        <div class="details-box">
+          <div class="details-en" id="d_cordials">Kahlua, Martell VS, Grand Marnier, Cointreau, Pama, Chambord, Disaronno Amaretto, St-Germain, Godiva, Bailey's, Frangelico.</div>
+          <div class="details-cn">甘露咖啡酒、马爹利VS干邑、柑曼怡橙酒、君度橙酒、帕玛石榴酒、香波树莓酒、帝萨诺杏仁酒、圣哲曼接骨木、歌帝梵巧克力酒、百利甜酒、榛子利口酒。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_cordials')">🔊 Speak Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_cordials')">🔊 Speak Details</button>
       </div>
     </div>
   </div>
@@ -1967,66 +2146,194 @@
     </div>
   </div>
 
-    <!-- ==================== PAGE 3: SOUPS & SALADS ==================== -->
-  <div id="p3-soups-salads" class="section-title">Soups & Salads <span>汤与沙拉系列</span></div>
+    <!-- ==================== PAGE 3: SOUPS ==================== -->
+  <div id="p3-soups-salads"></div>
+  <div id="p3-soups" class="section-title">Soups <span>汤类系列 (从上到下)</span></div>
   <div class="grid">
-    <!-- Miso Soup -->
+    <!-- Hot & Sour, Egg Drop, or Miso -->
     <div class="card">
-      <img src="images/miso_soup.jpg" alt="Miso Soup" onerror="this.style.display='none'">
+      <img src="images/hot_sour_soup.jpg" alt="Hot & Sour, Egg Drop, or Miso" onerror="this.style.display='none'">
       <div>
         <div class="card-header">
-          <div class="dish-name-en" id="n_miso_soup">Miso Soup</div>
-          <div class="price">$2.50</div>
+          <div class="dish-name-en" id="n_soup_trio">Hot & Sour, Egg Drop, or Miso Soup</div>
+          <div class="price">$3.95</div>
         </div>
-        <div class="dish-name-cn">日式传统豆腐海带味噌汤</div>
+        <div class="dish-name-cn">酸辣汤 / 蛋花汤 / 味噌汤 (三选一)</div>
         <div class="details-box">
-          <div class="details-en" id="d_miso_soup">Soybean Paste Soup with Tofu, Seaweed, and Scallions.</div>
-          <div class="details-cn">传统大豆发酵酱汤，配嫩豆腐丁、海带芽与新鲜葱花。</div>
+          <div class="details-en" id="d_soup_trio">Choice of Hot & Sour, Egg Drop, or Japanese Miso Soup.</div>
+          <div class="details-cn">经典中日风味热汤三选一：川味酸辣汤、滑嫩蛋花汤或日式豆腐海带味噌汤。</div>
         </div>
       </div>
       <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_miso_soup')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_miso_soup')">🔊 Speak Details</button>
+        <button class="btn-name" onclick="speakStrict('n_soup_trio')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_soup_trio')">🔊 Speak Details</button>
       </div>
     </div>
 
-    <!-- Onion Soup -->
+    <!-- Shrimp Wonton -->
     <div class="card">
-      <img src="images/onion_soup.jpg" alt="Clear Onion Soup" onerror="this.style.display='none'">
+      <img src="images/shrimp_wonton_soup.jpg" alt="Shrimp Wonton Soup" onerror="this.style.display='none'">
       <div>
         <div class="card-header">
-          <div class="dish-name-en" id="n_onion_soup">Clear Onion Soup</div>
-          <div class="price">$2.50</div>
+          <div class="dish-name-en" id="n_soup_shrimp_wonton">Shrimp Wonton Soup</div>
+          <div class="price">$4.95</div>
         </div>
-        <div class="dish-name-cn">日式清汤 (洋葱蘑菇清汤)</div>
+        <div class="dish-name-cn">鲜虾云吞清汤</div>
         <div class="details-box">
-          <div class="details-en" id="d_onion_soup">Clear Broth with Fried Onions, Mushrooms, and Scallions.</div>
-          <div class="details-cn">清亮肉汁高汤，配酥洋葱碎、鲜蘑菇片与鲜葱花。</div>
+          <div class="details-en" id="d_soup_shrimp_wonton">Handmade Shrimp Wontons in Savory Clear Broth with Scallions.</div>
+          <div class="details-cn">手工包制鲜虾馄饨，配清甜高汤与葱花。</div>
         </div>
       </div>
       <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_onion_soup')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_onion_soup')">🔊 Speak Details</button>
+        <button class="btn-name" onclick="speakStrict('n_soup_shrimp_wonton')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_soup_shrimp_wonton')">🔊 Speak Details</button>
       </div>
     </div>
 
+    <!-- Feel-Good Noodle -->
+    <div class="card">
+      <img src="images/feel_good_noodle.jpg" alt="Feel-Good Noodle Soup" onerror="this.style.display='none'">
+      <div>
+        <span class="badge">Dinner Only 仅限晚餐</span>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_soup_feel_good">Feel-Good Noodle Soup</div>
+          <div class="price">$12.95</div>
+        </div>
+        <div class="dish-name-cn">舒心暖胃云吞面 (仅限晚餐)</div>
+        <div class="details-box">
+          <div class="details-en" id="d_soup_feel_good">Shrimp Wontons, Spinach, Carrots, Cabbage. Dinner only.</div>
+          <div class="details-cn">大虾云吞、嫩菠菜、胡萝卜片与卷心菜温润高汤面。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_soup_feel_good')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_soup_feel_good')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Udon Noodle -->
+    <div class="card">
+      <img src="images/udon_noodle_soup.jpg" alt="Udon Noodle Soup" onerror="this.style.display='none'">
+      <div>
+        <span class="badge">Dinner Only 仅限晚餐</span>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_soup_udon">Udon Noodle Soup</div>
+          <div class="price">$12.95</div>
+        </div>
+        <div class="dish-name-cn">天妇罗大虾味噌乌冬面 (仅限晚餐)</div>
+        <div class="details-box">
+          <div class="details-en" id="d_soup_udon">Miso, Side of Tempura Shrimp. Dinner only.</div>
+          <div class="details-cn">醇香味噌乌冬热汤面，随餐附送现炸天妇罗大虾。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_soup_udon')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_soup_udon')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Deluxe Noodle -->
+    <div class="card">
+      <img src="images/deluxe_noodle_soup.jpg" alt="Deluxe Noodle Soup" onerror="this.style.display='none'">
+      <div>
+        <span class="badge">Dinner Only 仅限晚餐</span>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_soup_deluxe">Deluxe Noodle Soup</div>
+          <div class="price">$13.95</div>
+        </div>
+        <div class="dish-name-cn">豪华双鲜鸡肉大虾面 (仅限晚餐)</div>
+        <div class="details-box">
+          <div class="details-en" id="d_soup_deluxe">Shrimp, Chicken, Spinach, Carrots, Cabbage. Dinner only.</div>
+          <div class="details-cn">大虾仁、滑嫩鸡肉、菠菜、胡萝卜与卷心菜什锦大补汤面。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_soup_deluxe')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_soup_deluxe')">🔊 Speak Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 3: SALADS ==================== -->
+  <div id="p3-salads" class="section-title">Salads <span>沙拉系列 (从上到下)</span></div>
+  <div class="grid">
     <!-- House Salad -->
     <div class="card">
       <img src="images/house_salad.jpg" alt="House Salad" onerror="this.style.display='none'">
       <div>
         <div class="card-header">
-          <div class="dish-name-en" id="n_house_salad">House Salad</div>
-          <div class="price">$3.95</div>
+          <div class="dish-name-en" id="n_salad_house">House Salad</div>
+          <div class="price">$5.95</div>
         </div>
-        <div class="dish-name-cn">田园生姜汁沙拉</div>
+        <div class="dish-name-cn">招牌芝麻花生田园沙拉</div>
         <div class="details-box">
-          <div class="details-en" id="d_house_salad">Fresh Mixed Greens, Cucumber, Tomato with Homemade Ginger Dressing.</div>
-          <div class="details-cn">新鲜生菜、清脆黄瓜片、小番茄，淋特调日式生姜沙拉酱。</div>
+          <div class="details-en" id="d_salad_house">Mesclun, Carrots, Tomato with Sesame-Peanut Soy Vinaigrette.</div>
+          <div class="details-cn">嫩混合生菜、胡萝卜丝、番茄，淋芝麻花生生抽油醋汁。</div>
         </div>
       </div>
       <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_house_salad')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_house_salad')">🔊 Speak Details</button>
+        <button class="btn-name" onclick="speakStrict('n_salad_house')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_salad_house')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Ginger Salad -->
+    <div class="card">
+      <img src="images/ginger_salad.jpg" alt="Ginger Salad" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_salad_ginger">Ginger Salad</div>
+          <div class="price">$5.95</div>
+        </div>
+        <div class="dish-name-cn">日式生姜沙拉</div>
+        <div class="details-box">
+          <div class="details-en" id="d_salad_ginger">Iceberg Lettuce, Mesclun, Carrots, Tomatoes, Ginger Dressing.</div>
+          <div class="details-cn">爽脆圆生菜、嫩生菜、胡萝卜、新鲜番茄，配秘制生姜沙拉酱。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_salad_ginger')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_salad_ginger')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Sesame Noodle Salad -->
+    <div class="card">
+      <img src="images/sesame_noodle_salad.jpg" alt="Sesame Noodle Salad" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_salad_sesame_noodle">Sesame Noodle Salad</div>
+          <div class="price">$6.95</div>
+        </div>
+        <div class="dish-name-cn">芝麻捞面冷盘沙拉</div>
+        <div class="details-box">
+          <div class="details-en" id="d_salad_sesame_noodle">Cold Lo Mein, Mesclun, Carrots, Tomato, Sesame Peanut Soy Vinaigrette.</div>
+          <div class="details-cn">凉拌捞面、混合嫩生菜、胡萝卜丝、番茄，淋香浓芝麻花生生抽油醋汁。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_salad_sesame_noodle')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_salad_sesame_noodle')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Apple and Shrimp Salad -->
+    <div class="card">
+      <img src="images/apple_shrimp_salad.jpg" alt="Apple and Shrimp Salad" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_salad_apple_shrimp">Apple and Shrimp Salad</div>
+          <div class="price">$7.95</div>
+        </div>
+        <div class="dish-name-cn">富士苹果鲜虾飞鱼籽沙拉</div>
+        <div class="details-box">
+          <div class="details-en" id="d_salad_apple_shrimp">Diced Fuji Apples, Shrimp, Flying Fish Roe, Light Creamy Dressing.</div>
+          <div class="details-cn">红富士苹果丁、白灼鲜虾仁、飞鱼籽，拌清爽白奶油特调酱。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_salad_apple_shrimp')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_salad_apple_shrimp')">🔊 Speak Details</button>
       </div>
     </div>
 
@@ -2035,18 +2342,18 @@
       <img src="images/seaweed_salad.jpg" alt="Seaweed Salad" onerror="this.style.display='none'">
       <div>
         <div class="card-header">
-          <div class="dish-name-en" id="n_seaweed_salad">Seaweed Salad</div>
+          <div class="dish-name-en" id="n_salad_seaweed">Seaweed Salad</div>
           <div class="price">$5.95</div>
         </div>
-        <div class="dish-name-cn">日式芝麻海草沙拉</div>
+        <div class="dish-name-cn">日式绿海草沙拉</div>
         <div class="details-box">
-          <div class="details-en" id="d_seaweed_salad">Marinated Japanese Seaweed with Sesame Seeds.</div>
-          <div class="details-cn">精选调味日式绿海草，撒熟白芝麻。</div>
+          <div class="details-en" id="d_salad_seaweed">Japanese-style Green Seaweed, Sesame Seeds.</div>
+          <div class="details-cn">日式精调风味绿海草丝，撒香脆白芝麻。</div>
         </div>
       </div>
       <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_seaweed_salad')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_seaweed_salad')">🔊 Speak Details</button>
+        <button class="btn-name" onclick="speakStrict('n_salad_seaweed')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_salad_seaweed')">🔊 Speak Details</button>
       </div>
     </div>
 
@@ -2055,43 +2362,177 @@
       <img src="images/avocado_salad.jpg" alt="Avocado Salad" onerror="this.style.display='none'">
       <div>
         <div class="card-header">
-          <div class="dish-name-en" id="n_avocado_salad">Avocado Salad</div>
+          <div class="dish-name-en" id="n_salad_avocado">Avocado Salad</div>
           <div class="price">$6.95</div>
         </div>
-        <div class="dish-name-cn">牛油果田园沙拉</div>
+        <div class="dish-name-cn">牛油果蟹肉飞鱼籽沙拉</div>
         <div class="details-box">
-          <div class="details-en" id="d_avocado_salad">Sliced Fresh Avocado over Garden Salad with Ginger Dressing.</div>
-          <div class="details-cn">成熟牛油果切片覆盖于田园蔬菜之上，淋生姜沙拉酱。</div>
+          <div class="details-en" id="d_salad_avocado">Avocado, Crab Purée, Flying Fish Roe.</div>
+          <div class="details-cn">熟牛油果切块、特调蟹肉泥酱、鲜飞鱼籽。</div>
         </div>
       </div>
       <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_avocado_salad')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_avocado_salad')">🔊 Speak Details</button>
+        <button class="btn-name" onclick="speakStrict('n_salad_avocado')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_salad_avocado')">🔊 Speak Details</button>
       </div>
     </div>
 
-    <!-- Shrimp Apple Salad -->
+    <!-- Octopus Salad -->
     <div class="card">
-      <img src="images/shrimp_apple_salad.jpg" alt="Shrimp Apple Salad" onerror="this.style.display='none'">
+      <img src="images/octopus_salad.jpg" alt="Octopus Salad" onerror="this.style.display='none'">
       <div>
         <div class="card-header">
-          <div class="dish-name-en" id="n_shrimp_apple_salad">Shrimp Apple Salad</div>
-          <div class="price">$7.95</div>
+          <div class="dish-name-en" id="n_salad_octopus">Octopus Salad</div>
+          <div class="price">$8.95</div>
         </div>
-        <div class="dish-name-cn">苹果鲜虾特调沙拉</div>
+        <div class="dish-name-cn">八爪鱼海草黄瓜沙拉</div>
         <div class="details-box">
-          <div class="details-en" id="d_shrimp_apple_salad">Steamed Shrimp, Crisp Apple, Greens with Special House Dressing.</div>
-          <div class="details-cn">白灼鲜虾仁、爽脆苹果条、时令生菜，配招牌沙拉酱。</div>
+          <div class="details-en" id="d_salad_octopus">Seaweed, Cucumber, Sesame Seeds. Sliced Octopus.</div>
+          <div class="details-cn">切片熟八爪鱼章鱼、日式海草、爽脆黄瓜丝、熟白芝麻。</div>
         </div>
       </div>
       <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_shrimp_apple_salad')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_shrimp_apple_salad')">🔊 Speak Details</button>
+        <button class="btn-name" onclick="speakStrict('n_salad_octopus')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_salad_octopus')">🔊 Speak Details</button>
       </div>
     </div>
   </div>
 
-    <!-- ==================== PAGE 3: MAKI ROLLS (INDIVIDUAL ITEMS) ==================== -->
+  <div class="section-title">Sushi & Sashimi | A La Carte <span>单点手握寿司与刺身 (2件寿司 / 3片刺身)</span></div>
+  <div class="notice-box">
+    <strong>💡 单点规格说明 (Portion Specs):</strong><br>
+    A LA CARTE: 2 pieces sushi or 3 pieces sashimi per order.<br>
+    每份单点可选择：2件手握寿司（2 pc sushi）或 3片刺身生鱼片（3 pc sashimi）。
+  </div>
+  <div class="grid">
+    <!-- 5.95 Tier -->
+    <div class="card">
+      <img src="images/alacarte_595.jpg" alt="Salmon, Crab, Shrimp" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_alc_595">Salmon, Crab, or Shrimp</div>
+          <div class="price">$5.95 each</div>
+        </div>
+        <div class="dish-name-cn">三文鱼 / 蟹柳棒 / 熟虾 (5.95系列)</div>
+        <div class="details-box">
+          <div class="details-en" id="d_alc_595">
+            • 2 pc sushi or 3 pc sashimi<br>
+            • Salmon (5.95)<br>
+            • Crab (5.95)<br>
+            • Shrimp (5.95)
+          </div>
+          <div class="details-cn">
+            • 2件手握寿司 或 3片刺身生鱼片<br>
+            • 三文鱼（Salmon 5.95美元）<br>
+            • 蟹柳（Crab 5.95美元）<br>
+            • 熟虾（Shrimp 5.95美元）
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_alc_595')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_alc_595')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- 6.95 Tier -->
+    <div class="card">
+      <img src="images/alacarte_695.jpg" alt="Tuna, White Fish, Eel, Yellowtail, Red Clam" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_alc_695">Tuna, White Fish, Eel, Yellowtail, or Red Clam</div>
+          <div class="price">$6.95 each</div>
+        </div>
+        <div class="dish-name-cn">金枪鱼 / 白肉鱼 / 烤鳗鱼 / 黄尾鱼 / 北极贝 (6.95系列)</div>
+        <div class="details-box">
+          <div class="details-en" id="d_alc_695">
+            • 2 pc sushi or 3 pc sashimi<br>
+            • Tuna (6.95)<br>
+            • White Fish (6.95)<br>
+            • Eel (6.95)<br>
+            • Yellowtail (6.95)<br>
+            • Red Clam (6.95)
+          </div>
+          <div class="details-cn">
+            • 2件手握寿司 或 3片刺身生鱼片<br>
+            • 金枪鱼（Tuna 6.95美元）<br>
+            • 白肉鱼（White Fish 6.95美元）<br>
+            • 烤鳗鱼（Eel 6.95美元）<br>
+            • 黄尾鱼（Yellowtail 6.95美元）<br>
+            • 北极贝（Red Clam 6.95美元）
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_alc_695')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_alc_695')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- 7.95 Tier -->
+    <div class="card">
+      <img src="images/alacarte_795.jpg" alt="Salmon Roe, Octopus, Squid" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_alc_795">Salmon Roe, Octopus, or Squid</div>
+          <div class="price">$7.95 each</div>
+        </div>
+        <div class="dish-name-cn">三文鱼籽 / 八爪鱼 / 鲜鱿鱼 (7.95系列)</div>
+        <div class="details-box">
+          <div class="details-en" id="d_alc_795">
+            • 2 pc sushi or 3 pc sashimi<br>
+            • Salmon Roe (7.95)<br>
+            • Octopus (7.95)<br>
+            • Squid (7.95)
+          </div>
+          <div class="details-cn">
+            • 2件手握寿司 或 3片刺身生鱼片<br>
+            • 优质三文鱼籽军舰（Salmon Roe 7.95美元）<br>
+            • 鲜熟章鱼（Octopus 7.95美元）<br>
+            • 鲜切鱿鱼（Squid 7.95美元）
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_alc_795')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_alc_795')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- 9.95 Tier -->
+    <div class="card">
+      <img src="images/alacarte_995.jpg" alt="Sweet Shrimp, Scallops" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_alc_995">Sweet Shrimp or Scallops</div>
+          <div class="price">$9.95 each</div>
+        </div>
+        <div class="dish-name-cn">牡丹甜虾 / 鲜甜扇贝带子 (9.95顶级系列)</div>
+        <div class="details-box">
+          <div class="details-en" id="d_alc_995">
+            • 2 pc sushi or 3 pc sashimi<br>
+            • Sweet Shrimp (9.95)<br>
+            • Scallops (9.95)
+          </div>
+          <div class="details-cn">
+            • 2件手握寿司 或 3片刺身生鱼片<br>
+            • 牡丹甜虾（Sweet Shrimp 9.95美元）<br>
+            • 鲜大带子鲜贝（Scallops 9.95美元）
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_alc_995')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_alc_995')">🔊 Speak Details</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="page4" class="page-banner">
+    <div>Menu Page 4: Lunch Specials, Wok, Grille, Noodles & Sides</div>
+  </div>
+
+  <!-- ==================== PAGE 3: MAKI ROLLS (INDIVIDUAL ITEMS) ==================== -->
   <div id="p3-maki" class="section-title">Maki Rolls <span>经典小细卷 (逐项独立成卡)</span></div>
 
   <div class="notice-box">
@@ -3118,140 +3559,6 @@
     </div>
   </div>
 
-  <div class="section-title">Sushi & Sashimi A La Carte <span>单点手握寿司与刺身 (2件寿司 / 3片刺身)</span></div>
-  <div class="notice-box">
-    <strong>💡 单点规格说明 (Portion Specs):</strong><br>
-    A LA CARTE: 2 pieces sushi or 3 pieces sashimi per order.<br>
-    每份单点可选择：2件手握寿司（2 pc sushi）或 3片刺身生鱼片（3 pc sashimi）。
-  </div>
-  <div class="grid">
-    <!-- 5.95 Tier -->
-    <div class="card">
-      <img src="images/alacarte_595.jpg" alt="Salmon, Crab, Shrimp" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_alc_595">Salmon, Crab, or Shrimp</div>
-          <div class="price">$5.95 each</div>
-        </div>
-        <div class="dish-name-cn">三文鱼 / 蟹柳棒 / 熟虾 (5.95系列)</div>
-        <div class="details-box">
-          <div class="details-en" id="d_alc_595">
-            • 2 pc sushi or 3 pc sashimi<br>
-            • Salmon (5.95)<br>
-            • Crab (5.95)<br>
-            • Shrimp (5.95)
-          </div>
-          <div class="details-cn">
-            • 2件手握寿司 或 3片刺身生鱼片<br>
-            • 三文鱼（Salmon 5.95美元）<br>
-            • 蟹柳（Crab 5.95美元）<br>
-            • 熟虾（Shrimp 5.95美元）
-          </div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_alc_595')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_alc_595')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- 6.95 Tier -->
-    <div class="card">
-      <img src="images/alacarte_695.jpg" alt="Tuna, White Fish, Eel, Yellowtail, Red Clam" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_alc_695">Tuna, White Fish, Eel, Yellowtail, or Red Clam</div>
-          <div class="price">$6.95 each</div>
-        </div>
-        <div class="dish-name-cn">金枪鱼 / 白肉鱼 / 烤鳗鱼 / 黄尾鱼 / 北极贝 (6.95系列)</div>
-        <div class="details-box">
-          <div class="details-en" id="d_alc_695">
-            • 2 pc sushi or 3 pc sashimi<br>
-            • Tuna (6.95)<br>
-            • White Fish (6.95)<br>
-            • Eel (6.95)<br>
-            • Yellowtail (6.95)<br>
-            • Red Clam (6.95)
-          </div>
-          <div class="details-cn">
-            • 2件手握寿司 或 3片刺身生鱼片<br>
-            • 金枪鱼（Tuna 6.95美元）<br>
-            • 白肉鱼（White Fish 6.95美元）<br>
-            • 烤鳗鱼（Eel 6.95美元）<br>
-            • 黄尾鱼（Yellowtail 6.95美元）<br>
-            • 北极贝（Red Clam 6.95美元）
-          </div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_alc_695')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_alc_695')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- 7.95 Tier -->
-    <div class="card">
-      <img src="images/alacarte_795.jpg" alt="Salmon Roe, Octopus, Squid" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_alc_795">Salmon Roe, Octopus, or Squid</div>
-          <div class="price">$7.95 each</div>
-        </div>
-        <div class="dish-name-cn">三文鱼籽 / 八爪鱼 / 鲜鱿鱼 (7.95系列)</div>
-        <div class="details-box">
-          <div class="details-en" id="d_alc_795">
-            • 2 pc sushi or 3 pc sashimi<br>
-            • Salmon Roe (7.95)<br>
-            • Octopus (7.95)<br>
-            • Squid (7.95)
-          </div>
-          <div class="details-cn">
-            • 2件手握寿司 或 3片刺身生鱼片<br>
-            • 优质三文鱼籽军舰（Salmon Roe 7.95美元）<br>
-            • 鲜熟章鱼（Octopus 7.95美元）<br>
-            • 鲜切鱿鱼（Squid 7.95美元）
-          </div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_alc_795')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_alc_795')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- 9.95 Tier -->
-    <div class="card">
-      <img src="images/alacarte_995.jpg" alt="Sweet Shrimp, Scallops" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_alc_995">Sweet Shrimp or Scallops</div>
-          <div class="price">$9.95 each</div>
-        </div>
-        <div class="dish-name-cn">牡丹甜虾 / 鲜甜扇贝带子 (9.95顶级系列)</div>
-        <div class="details-box">
-          <div class="details-en" id="d_alc_995">
-            • 2 pc sushi or 3 pc sashimi<br>
-            • Sweet Shrimp (9.95)<br>
-            • Scallops (9.95)
-          </div>
-          <div class="details-cn">
-            • 2件手握寿司 或 3片刺身生鱼片<br>
-            • 牡丹甜虾（Sweet Shrimp 9.95美元）<br>
-            • 鲜大带子鲜贝（Scallops 9.95美元）
-          </div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_alc_995')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_alc_995')">🔊 Speak Details</button>
-      </div>
-    </div>
-  </div>
-
-  <div id="page4" class="page-banner">
-    <div>Menu Page 4: Lunch Specials, Wok, Grille, Noodles & Sides</div>
-  </div>
-
   <div id="p4-lunch" class="section-title">Sushi Lunch Specials <span>午市特惠寿司组合 (11:30AM - 3:30PM)</span></div>
   <div class="notice-box">
     <strong>💡 午市寿司点单规则 (Lunch Rules & Substitutions):</strong><br>
@@ -3328,7 +3635,7 @@
     • <strong>Side:</strong> 均配白米饭。换糙米饭或炒饭 +$2.50；换虾炒饭或鸡肉炒饭 +$6.95。
   </div>
   <div class="grid">
-    <!-- Thai Basil -->
+<!-- Thai Basil -->
     <div class="card">
       <img src="images/thai_basil.jpg" alt="Thai Basil" onerror="this.style.display='none'">
       <div>
@@ -3347,48 +3654,7 @@
         <button class="btn-desc" onclick="speakStrict('d_tb')">🔊 Speak Details</button>
       </div>
     </div>
-
-    <!-- Sesame -->
-    <div class="card">
-      <img src="images/sesame.jpg" alt="Sesame" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_ses">Sesame</div>
-          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
-        </div>
-        <div class="dish-name-cn">芝麻甜脆肉</div>
-        <div class="details-box">
-          <div class="details-en" id="d_ses">With Broccoli. Choice of Steamed or Fried Meat.</div>
-          <div class="details-cn">配西兰花。肉可选择健康清蒸（Steamed）或香酥油炸（Fried）。需向客人确认。</div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_ses')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_ses')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- Garlic Vegetables -->
-    <div class="card">
-      <img src="images/garlic_vegetables.jpg" alt="Garlic Vegetables" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_gv">Garlic Vegetables</div>
-          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
-        </div>
-        <div class="dish-name-cn">蒜香时蔬炒</div>
-        <div class="details-box">
-          <div class="details-en" id="d_gv">Zucchini, Squash, Asparagus, Broccoli, Snow Peas, Mushrooms, and Carrots Sauteed in Garlic Brown Sauce.</div>
-          <div class="details-cn">西葫芦、黄南瓜、芦笋、西兰花、荷兰豆、蘑菇、胡萝卜蒜香棕汁快炒。</div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_gv')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_gv')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- Mongolian -->
+<!-- Mongolian -->
     <div class="card">
       <img src="images/mongolian.jpg" alt="Mongolian" onerror="this.style.display='none'">
       <div>
@@ -3407,48 +3673,7 @@
         <button class="btn-desc" onclick="speakStrict('d_mong')">🔊 Speak Details</button>
       </div>
     </div>
-
-    <!-- General Tso's or Orange -->
-    <div class="card">
-      <img src="images/general_tsos.jpg" alt="General Tso's or Orange" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_gto">General Tso's or Orange</div>
-          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
-        </div>
-        <div class="dish-name-cn">左宗棠 / 陈皮橙汁</div>
-        <div class="details-box">
-          <div class="details-en" id="d_gto">Broccoli, Spicy Sweet and Sour Sauce.</div>
-          <div class="details-cn">西兰花围边，经典美式酸甜微辣红酱。</div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_gto')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_gto')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- Hot Chili -->
-    <div class="card">
-      <img src="images/hot_chili.jpg" alt="Hot Chili" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_hc">Hot Chili</div>
-          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
-        </div>
-        <div class="dish-name-cn">鲜辣洋葱豆炒</div>
-        <div class="details-box">
-          <div class="details-en" id="d_hc">Onions, Green Peas.</div>
-          <div class="details-cn">洋葱丝、青豆爆炒鲜辣酱汁。</div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_hc')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_hc')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- Ginger -->
+<!-- Ginger -->
     <div class="card">
       <img src="images/ginger_wok.jpg" alt="Ginger" onerror="this.style.display='none'">
       <div>
@@ -3467,28 +3692,7 @@
         <button class="btn-desc" onclick="speakStrict('d_gin')">🔊 Speak Details</button>
       </div>
     </div>
-
-    <!-- Cashew -->
-    <div class="card">
-      <img src="images/cashew.jpg" alt="Cashew" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_cash">Cashew</div>
-          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
-        </div>
-        <div class="dish-name-cn">腰果炒</div>
-        <div class="details-box">
-          <div class="details-en" id="d_cash">Zucchini, Squash, Cashew Nuts, Brown Sauce.</div>
-          <div class="details-cn">西葫芦、黄南瓜、香脆腰果、咸鲜棕汁。</div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_cash')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_cash')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- Almond -->
+<!-- Almond -->
     <div class="card">
       <img src="images/almond.jpg" alt="Almond" onerror="this.style.display='none'">
       <div>
@@ -3507,28 +3711,7 @@
         <button class="btn-desc" onclick="speakStrict('d_alm')">🔊 Speak Details</button>
       </div>
     </div>
-
-    <!-- Kung Pao -->
-    <div class="card">
-      <img src="images/kung_pao.jpg" alt="Kung Pao" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_kp">Kung Pao</div>
-          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
-        </div>
-        <div class="dish-name-cn">宫保炒 (辣)</div>
-        <div class="details-box">
-          <div class="details-en" id="d_kp">Peanuts, Red and Green Bell Peppers, Chili Sauce.</div>
-          <div class="details-cn">香脆花生仁、青红椒、干辣椒宫保红油。</div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_kp')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_kp')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- Moo Shu -->
+<!-- Moo Shu -->
     <div class="card">
       <img src="images/moo_shu.jpg" alt="Moo Shu" onerror="this.style.display='none'">
       <div>
@@ -3547,28 +3730,7 @@
         <button class="btn-desc" onclick="speakStrict('d_ms')">🔊 Speak Details</button>
       </div>
     </div>
-
-    <!-- Maestro -->
-    <div class="card">
-      <img src="images/maestro.jpg" alt="Maestro" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_mae">Maestro</div>
-          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
-        </div>
-        <div class="dish-name-cn">蒜香芦笋四季豆</div>
-        <div class="details-box">
-          <div class="details-en" id="d_mae">Asparagus, Green Beans, Garlic.</div>
-          <div class="details-cn">嫩芦笋、四季豆、大蒜末浓香快炒。</div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_mae')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_mae')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- Szechuan -->
+<!-- Szechuan -->
     <div class="card">
       <img src="images/szechuan.jpg" alt="Szechuan" onerror="this.style.display='none'">
       <div>
@@ -3587,28 +3749,7 @@
         <button class="btn-desc" onclick="speakStrict('d_szech')">🔊 Speak Details</button>
       </div>
     </div>
-
-    <!-- Steamed Vegetables -->
-    <div class="card">
-      <img src="images/steamed_vegetables.jpg" alt="Steamed Vegetables" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_sv">Steamed Vegetables</div>
-          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
-        </div>
-        <div class="dish-name-cn">清蒸健康什锦蔬菜</div>
-        <div class="details-box">
-          <div class="details-en" id="d_sv">Zucchini, Squash, Asparagus, Broccoli, Snow Peas, Mushrooms, Carrots. Choice of Sauce on the Side.</div>
-          <div class="details-cn">全蒸无油蔬菜，酱汁装在小碗放在旁边。</div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_sv')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_sv')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- Emerald -->
+<!-- Emerald -->
     <div class="card">
       <img src="images/emerald.jpg" alt="Emerald" onerror="this.style.display='none'">
       <div>
@@ -3627,28 +3768,7 @@
         <button class="btn-desc" onclick="speakStrict('d_eme')">🔊 Speak Details</button>
       </div>
     </div>
-
-    <!-- Mango -->
-    <div class="card">
-      <img src="images/mango.jpg" alt="Mango" onerror="this.style.display='none'">
-      <div>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_man">Mango</div>
-          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
-        </div>
-        <div class="dish-name-cn">鲜芒果炒</div>
-        <div class="details-box">
-          <div class="details-en" id="d_man">With Red and Green Bell Peppers.</div>
-          <div class="details-cn">新鲜芒果条、彩椒块快炒。</div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_man')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_man')">🔊 Speak Details</button>
-      </div>
-    </div>
-
-    <!-- Sweet and Sour -->
+<!-- Sweet and Sour -->
     <div class="card">
       <img src="images/sweet_and_sour.jpg" alt="Sweet and Sour" onerror="this.style.display='none'">
       <div>
@@ -3665,6 +3785,177 @@
       <div class="btn-row">
         <button class="btn-name" onclick="speakStrict('n_ssour')">🔊 Speak Dish Name</button>
         <button class="btn-desc" onclick="speakStrict('d_ssour')">🔊 Speak Details</button>
+      </div>
+    </div>
+<!-- Sesame -->
+    <div class="card">
+      <img src="images/sesame.jpg" alt="Sesame" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_ses">Sesame</div>
+          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
+        </div>
+        <div class="dish-name-cn">芝麻甜脆肉</div>
+        <div class="details-box">
+          <div class="details-en" id="d_ses">With Broccoli. Choice of Steamed or Fried Meat.</div>
+          <div class="details-cn">配西兰花。肉可选择健康清蒸（Steamed）或香酥油炸（Fried）。需向客人确认。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_ses')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_ses')">🔊 Speak Details</button>
+      </div>
+    </div>
+<!-- General Tso's or Orange -->
+    <div class="card">
+      <img src="images/general_tsos.jpg" alt="General Tso's or Orange" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_gto">General Tso's or Orange</div>
+          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
+        </div>
+        <div class="dish-name-cn">左宗棠 / 陈皮橙汁</div>
+        <div class="details-box">
+          <div class="details-en" id="d_gto">Broccoli, Spicy Sweet and Sour Sauce.</div>
+          <div class="details-cn">西兰花围边，经典美式酸甜微辣红酱。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_gto')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_gto')">🔊 Speak Details</button>
+      </div>
+    </div>
+<!-- Hot Chili -->
+    <div class="card">
+      <img src="images/hot_chili.jpg" alt="Hot Chili" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_hc">Hot Chili</div>
+          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
+        </div>
+        <div class="dish-name-cn">鲜辣洋葱豆炒</div>
+        <div class="details-box">
+          <div class="details-en" id="d_hc">Onions, Green Peas.</div>
+          <div class="details-cn">洋葱丝、青豆爆炒鲜辣酱汁。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_hc')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_hc')">🔊 Speak Details</button>
+      </div>
+    </div>
+<!-- Cashew -->
+    <div class="card">
+      <img src="images/cashew.jpg" alt="Cashew" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_cash">Cashew</div>
+          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
+        </div>
+        <div class="dish-name-cn">腰果炒</div>
+        <div class="details-box">
+          <div class="details-en" id="d_cash">Zucchini, Squash, Cashew Nuts, Brown Sauce.</div>
+          <div class="details-cn">西葫芦、黄南瓜、香脆腰果、咸鲜棕汁。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_cash')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_cash')">🔊 Speak Details</button>
+      </div>
+    </div>
+<!-- Kung Pao -->
+    <div class="card">
+      <img src="images/kung_pao.jpg" alt="Kung Pao" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_kp">Kung Pao</div>
+          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
+        </div>
+        <div class="dish-name-cn">宫保炒 (辣)</div>
+        <div class="details-box">
+          <div class="details-en" id="d_kp">Peanuts, Red and Green Bell Peppers, Chili Sauce.</div>
+          <div class="details-cn">香脆花生仁、青红椒、干辣椒宫保红油。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_kp')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_kp')">🔊 Speak Details</button>
+      </div>
+    </div>
+<!-- Maestro -->
+    <div class="card">
+      <img src="images/maestro.jpg" alt="Maestro" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_mae">Maestro</div>
+          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
+        </div>
+        <div class="dish-name-cn">蒜香芦笋四季豆</div>
+        <div class="details-box">
+          <div class="details-en" id="d_mae">Asparagus, Green Beans, Garlic.</div>
+          <div class="details-cn">嫩芦笋、四季豆、大蒜末浓香快炒。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_mae')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_mae')">🔊 Speak Details</button>
+      </div>
+    </div>
+<!-- Steamed Vegetables -->
+    <div class="card">
+      <img src="images/steamed_vegetables.jpg" alt="Steamed Vegetables" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_sv">Steamed Vegetables</div>
+          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
+        </div>
+        <div class="dish-name-cn">清蒸健康什锦蔬菜</div>
+        <div class="details-box">
+          <div class="details-en" id="d_sv">Zucchini, Squash, Asparagus, Broccoli, Snow Peas, Mushrooms, Carrots. Choice of Sauce on the Side.</div>
+          <div class="details-cn">全蒸无油蔬菜，酱汁装在小碗放在旁边。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_sv')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_sv')">🔊 Speak Details</button>
+      </div>
+    </div>
+<!-- Garlic Vegetables -->
+    <div class="card">
+      <img src="images/garlic_vegetables.jpg" alt="Garlic Vegetables" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_gv">Garlic Vegetables</div>
+          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
+        </div>
+        <div class="dish-name-cn">蒜香时蔬炒</div>
+        <div class="details-box">
+          <div class="details-en" id="d_gv">Zucchini, Squash, Asparagus, Broccoli, Snow Peas, Mushrooms, and Carrots Sauteed in Garlic Brown Sauce.</div>
+          <div class="details-cn">西葫芦、黄南瓜、芦笋、西兰花、荷兰豆、蘑菇、胡萝卜蒜香棕汁快炒。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_gv')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_gv')">🔊 Speak Details</button>
+      </div>
+    </div>
+<!-- Mango -->
+    <div class="card">
+      <img src="images/mango.jpg" alt="Mango" onerror="this.style.display='none'">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_man">Mango</div>
+          <div class="price">Lunch $9.95+<br>Dinner $14.95+</div>
+        </div>
+        <div class="dish-name-cn">鲜芒果炒</div>
+        <div class="details-box">
+          <div class="details-en" id="d_man">With Red and Green Bell Peppers.</div>
+          <div class="details-cn">新鲜芒果条、彩椒块快炒。</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_man')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_man')">🔊 Speak Details</button>
       </div>
     </div>
   </div>
@@ -3978,6 +4269,33 @@
       <div class="btn-row">
         <button class="btn-name" onclick="speakStrict('n_flank_steak')">🔊 Speak Dish Name</button>
         <button class="btn-desc" onclick="speakStrict('d_flank_steak')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Policy & Allergy Notice Card -->
+    <div class="card" style="border-left: 4px solid var(--primary); background: #fffdfa;">
+      <div>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_grille_policy">Dining Policy & Allergy Advisory</div>
+          <div class="price">Notice</div>
+        </div>
+        <div class="dish-name-cn">用餐服务费说明与过敏提示</div>
+        <div class="details-box">
+          <div class="details-en" id="d_grille_policy">
+            • 18% gratuity will be added to parties of 6 or more. <br>
+            • Gluten-free available. <br>
+            • Please alert your server to any dietary requirements or allergies.
+          </div>
+          <div class="details-cn">
+            • 6人及以上团体用餐将自动计入 18% 服务费。<br>
+            • 可提供无麸质选项（GLUTEN FREE）。<br>
+            • 如有任何特殊需求或过敏，请提前告知您的服务员。
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_grille_policy')">🔊 Speak Title</button>
+        <button class="btn-desc" onclick="speakStrict('d_grille_policy')">🔊 Speak Policy</button>
       </div>
     </div>
   </div>
@@ -4469,41 +4787,8 @@
     </div>
   </div>
 
-  <div id="p4-kids-bev" class="section-title">Kids Menu & Beverages <span>儿童餐与软饮名茶</span></div>
+  <div id="p4-kids-bev" class="section-title">Beverages & Kids Menu <span>软饮名茶与儿童餐</span></div>
   <div class="grid">
-    <!-- Kids Menu items individually listed -->
-    <div class="card">
-      <img src="images/kids_menu.jpg" alt="Kids Menu" onerror="this.style.display='none'">
-      <div>
-        <span class="badge">12 & Under Only</span>
-        <div class="card-header">
-          <div class="dish-name-en" id="n_kids">Kids Menu Items</div>
-          <div class="price">$6.95 each</div>
-        </div>
-        <div class="dish-name-cn">儿童专享套餐 (12岁及以下)</div>
-        <div class="details-box">
-          <div class="details-en" id="d_kids">
-            • Shanghai Noodle (Chicken or Shrimp)<br>
-            • Deluxe Rice (Chicken or Shrimp)<br>
-            • Sesame Chicken (Choice of White, Brown, or Veggie Fried Rice)<br>
-            • Chicken Tender (Breaded and Fried)<br>
-            • Please specify if child prefers no vegetables.
-          </div>
-          <div class="details-cn">
-            • 鸡肉或虾捞面（6.95美元）<br>
-            • 鸡肉或虾炒饭（6.95美元）<br>
-            • 芝麻鸡配饭（6.95美元）<br>
-            • 酥炸鸡柳配饭（6.95美元）<br>
-            • 记得向家长确认孩子是否不吃任何蔬菜。
-          </div>
-        </div>
-      </div>
-      <div class="btn-row">
-        <button class="btn-name" onclick="speakStrict('n_kids')">🔊 Speak Dish Name</button>
-        <button class="btn-desc" onclick="speakStrict('d_kids')">🔊 Speak Details</button>
-      </div>
-    </div>
-
     <!-- Soft Drinks -->
     <div class="card">
       <img src="images/soft_drinks.jpg" alt="Soft Drinks" onerror="this.style.display='none'">
@@ -4515,20 +4800,20 @@
         <div class="dish-name-cn">汽水与瓶装矿泉水</div>
         <div class="details-box">
           <div class="details-en" id="d_soft_drinks">
-            • Coke Products (2.50)<br>
-            • Iced Tea (1.95)<br>
-            • Lemonade (2.95)<br>
-            • Evian Natural Spring Water (2.95)<br>
-            • Perrier Sparkling Water (3.75)<br>
-            • Red Bull Energy Drink (3.50)
+            • Evian.<br>
+            • Perrier.<br>
+            • Iced Tea.<br>
+            • Coke Products.<br>
+            • Red Bull.<br>
+            • Lemonade.<br>
           </div>
           <div class="details-cn">
-            • 可乐类汽水（2.50美元）<br>
-            • 柠檬冰红茶（1.95美元）<br>
-            • 柠檬水（2.95美元）<br>
             • 依云天然矿泉水（2.95美元）<br>
             • 巴黎水含气矿泉水（3.75美元）<br>
-            • 红牛功能饮料（3.50美元）
+            • 冰红茶（1.95美元）<br>
+            • 可乐类汽水（2.50美元）<br>
+            • 红牛功能饮料（3.50美元）<br>
+            • 柠檬水（2.95美元）<br>
           </div>
         </div>
       </div>
@@ -4546,25 +4831,62 @@
           <div class="dish-name-en" id="n_teas">China Loose Leaf Teas</div>
           <div class="price">$5.95 / Pot</div>
         </div>
-        <div class="dish-name-cn">中国原产散叶热茶壶</div>
+        <div class="dish-name-cn">中国原产散叶热茶</div>
         <div class="details-box">
           <div class="details-en" id="d_teas">
             • Pot 5.95. Imported from China.<br>
-            • Green Tea (清新绿茶)<br>
-            • Oolong Tea (醇香乌龙茶)<br>
-            • Jasmine Tea (茉莉花茶)<br>
-            • Black Pu-er Tea (云南陈年普洱黑茶)<br>
-            • Blooming White Tea (工艺开花白茶)
+            • Green Tea.<br>
+            • Oolong Tea.<br>
+            • Jasmine Tea.<br>
+            • Black Pu-er Tea.<br>
+            • Blooming White Tea.
           </div>
           <div class="details-cn">
             • 每壶5.95美元，中国原产散茶现泡。<br>
-            • 备选项：绿茶、乌龙茶、茉莉花茶、云南普洱茶、工艺开花白茶。
+            • 绿茶<br>
+            • 乌龙茶<br>
+            • 茉莉花茶<br>
+            • 云南普洱茶<br>
+            • 工艺白花茶。
           </div>
         </div>
       </div>
       <div class="btn-row">
         <button class="btn-name" onclick="speakStrict('n_teas')">🔊 Speak Dish Name</button>
         <button class="btn-desc" onclick="speakStrict('d_teas')">🔊 Speak Details</button>
+      </div>
+    </div>
+
+    <!-- Kids Menu items individually listed -->
+    <div class="card">
+      <img src="images/kids_menu.jpg" alt="Kids Menu" onerror="this.style.display='none'">
+      <div>
+        <span class="badge">12 & Under Only</span>
+        <div class="card-header">
+          <div class="dish-name-en" id="n_kids">Kids Menu Items</div>
+          <div class="price">$6.95 each</div>
+        </div>
+        <div class="dish-name-cn">儿童专享套餐 (12岁及以下)</div>
+        <div class="details-box">
+          <div class="details-en" id="d_kids">
+            • Shanghai Noodle (Chicken or Shrimp).<br>
+            • Deluxe Rice (Chicken or Shrimp).<br>
+            • Sesame Chicken (Choice of White, Brown, or Veggie Fried Rice).<br>
+            • Chicken Tender (Breaded and Fried).<br>
+            • Please specify if child prefers no vegetables.
+          </div>
+          <div class="details-cn">
+            • 上海捞面（鸡肉或虾可选，6.95美元）<br>
+            • 本楼豪华炒饭（鸡肉或虾可选，6.95美元）<br>
+            • 芝麻鸡（可选白饭、糙米饭或蔬菜炒饭，6.95美元）<br>
+            • 香酥炸鸡柳（裹面包粉香炸，6.95美元）<br>
+            • 下单请特别注明孩子是否不加任何蔬菜。
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-name" onclick="speakStrict('n_kids')">🔊 Speak Dish Name</button>
+        <button class="btn-desc" onclick="speakStrict('d_kids')">🔊 Speak Details</button>
       </div>
     </div>
   </div>
